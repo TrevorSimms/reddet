@@ -1,7 +1,13 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   padding: 0%;
   margin: 0%;
   background-color: rgb(20, 20, 20);
+  color: rgb(20, 20, 20);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -17,9 +23,17 @@ body {
   font-size: 3em;
 }
 
-#contain {
+#contain[class=empty] {
   padding-top: 2%;
   padding-bottom: 3%;
+  height: 70%;
+  background-color: #c8c8c8;
+}
+
+#contain[class=exists] {
+  padding-top: 2%;
+  padding-bottom: 3%;
+  height: auto;
   background-color: #c8c8c8;
 }
 

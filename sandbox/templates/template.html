@@ -6,20 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" href="{% static 'sandbox/css/stylesheet.css' %}">
-        <script src="{% static 'sandbox/script/head.js' %}"></script>
+        <script type="text/javascript" src="{% static 'sandbox/script/main.js' %}" defer></script> 
     </head>
     <body>
         <div id="header">
             <span id="banner"> reddet </span>
         </div>
+
         
-        
-        <div id="contain">
+        <div id="contain" class="{% if not posts %}empty{%else%}exists{% endif %}">
             {% block board  %}
             {% endblock  %}
         </div>
     <div id="footer"><span id="myContact">trevor-simms@outlook.com</span><span id="footerDate"></span></div>
     
     </body>
-    <script type="text/javascript" src="{% static 'sandbox/script/main.js' %}"></script> 
 </html>
