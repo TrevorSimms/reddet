@@ -1,0 +1,118 @@
+$myBlack: rgb(20, 20, 20)
+$containColor: #c8c8c8
+$contentColor: #a1a1a1
+$myFont: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+$contentVertPadding: 3%
+
+=horizMargin
+    margin-left: 10%
+    margin-right: 10%
+
+=buttonStyle($bdColor, $bgColor)
+    border-radius: 5px
+    border: 1px $bdColor solid
+    background-color: $bgColor
+
+=textStyle($bdColor, $bgColor)
+    border-radius: 3px
+    border: 1px $bdColor solid
+    background-color: $bgColor
+
+=contentLike
+    border-radius: 5px
+    border: 1px gray solid
+    background-color: $contentColor
+
+body
+    padding: 0%
+    margin: 0%
+    background-color: $myBlack
+    font-family: $myFont
+
+#header
+    border-bottom: 1px solid
+    padding: 1%
+    padding-left: 10%
+    text-align: left
+
+#banner
+    color: snow
+    font-size: 3em
+
+#contain
+    padding-top: 2%
+    padding-bottom: 3%
+    background-color: $containColor
+
+.content 
+    margin: $contentVertPadding
+    +horizMargin
+    padding: $contentVertPadding
+    +contentLike
+
+.title
+    font-weight: bolder
+
+.name
+    font-size: smaller
+    font-style: italic
+
+.postcount   
+    font-size: smaller
+
+.body
+    text-indent: 3m
+
+#textroom 
+    margin-top: 2%
+    margin-bottom: 3%
+    +horizMargin
+    display: flex
+    justify-content: left
+    align-items: center
+    text-align: center
+
+.aleft
+    text-align: left
+
+.ftitle
+    +contentLike
+    padding: 0.25em
+
+#footer 
+    margin-top: 2%
+    margin-bottom: 2%
+    color: snow 
+
+#footerDate 
+    text-align: right
+    margin-right: 10%
+    margin-bottom: 2%
+    float: right
+
+#myContact 
+    text-align: left 
+    margin-left: 10% 
+    margin-bottom: 2%
+    float: left
+
+input[type=button],
+input[type=submit]
+    +buttonStyle(lightslategrey, slategrey)
+
+input[type=button]:hover,
+input[type=submit]:hover
+    +buttonStyle(slategrey, lightslategrey)
+
+input[type=text]
+    +textStyle(slategrey, snow)
+
+input[type=text]:focus
+    +textStyle(lightslategrey, lightgrey)
+
+textarea
+    +textStyle(slategrey, snow)
+    font-family: $myFont
+
+textarea:focus
+    +textStyle(lightslategrey, lightgrey)

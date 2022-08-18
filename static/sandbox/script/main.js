@@ -1,3 +1,6 @@
 // any scripts to be run after <body>
-let myDate = new Date();
-document.getElementById("footerDate").innerHTML = myDate;
+var myDate = new Date();
+var footerDate = document.getElementById('footerDate');
+if (footerDate != null) {
+    footerDate.innerHTML = myDate.toTimeString();
+}

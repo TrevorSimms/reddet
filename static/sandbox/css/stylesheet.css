@@ -1,131 +1,134 @@
 body {
-    padding: 0%;
-    margin: 0%;    
-    background-color: rgb(20, 20, 20);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0%;
+  margin: 0%;
+  background-color: rgb(20, 20, 20);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #header {
-    border-bottom: 1px solid;
-    padding: 1%;
-    padding-left: 10%;
-    text-align: left;
+  border-bottom: 1px solid;
+  padding: 1%;
+  padding-left: 10%;
+  text-align: left;
 }
 
 #banner {
-    color: snow; 
-    font-size: 3em;
+  color: snow;
+  font-size: 3em;
 }
 
 #contain {
-    padding-top: 2%;
-    padding-bottom: 3%;
-    background-color: #c8c8c8;
-    
+  padding-top: 2%;
+  padding-bottom: 3%;
+  background-color: #c8c8c8;
 }
 
 .content {
-    margin: 3%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 3%;
-    border-radius: 5px;
-    border: 1px gray solid;
-    background-color: #a1a1a1;
+  margin: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 3%;
+  border-radius: 5px;
+  border: 1px gray solid;
+  background-color: #a1a1a1;
 }
 
 .title {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .name {
-    font-size: smaller;
-    font-style: italic;
+  font-size: smaller;
+  font-style: italic;
 }
 
 .postcount {
-    font-size: smaller;
+  font-size: smaller;
 }
 
 .body {
-    text-indent: 3em;
+  text-indent: 3m;
 }
 
 #textroom {
-    margin-top: 2%;
-    margin-bottom: 3%;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    text-align: center;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
 }
 
 .aleft {
-    text-align: left;
+  text-align: left;
 }
 
 .ftitle {
-    border-radius: 5px;
-    border: 1px gray solid;
-    background-color: #a1a1a1;
-    padding: 0.25em;
+  border-radius: 5px;
+  border: 1px gray solid;
+  background-color: #a1a1a1;
+  padding: 0.25em;
 }
 
 #footer {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    color: snow; 
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: snow;
 }
 
 #footerDate {
-    text-align: right;
-    margin-right: 10%;
-    margin-bottom: 2%;
-    float: right;
+  text-align: right;
+  margin-right: 10%;
+  margin-bottom: 2%;
+  float: right;
 }
 
 #myContact {
-    text-align: left; 
-    margin-left: 10%; 
-    margin-bottom: 2%;
-    float: left;
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 2%;
+  float: left;
 }
 
-input[type=button], input[type=submit] {
-    border-radius: 5px;
-    border: 1px lightslategray solid;
-    background-color: slategrey; 
+input[type=button],
+input[type=submit] {
+  border-radius: 5px;
+  border: 1px lightslategrey solid;
+  background-color: slategrey;
 }
 
-input[type=button]:hover, input[type=submit]:hover {
-    border-radius: 5px;
-    border: 1px slategray solid;
-    background-color: lightslategrey; 
+input[type=button]:hover,
+input[type=submit]:hover {
+  border-radius: 5px;
+  border: 1px slategrey solid;
+  background-color: lightslategrey;
 }
 
 input[type=text] {
-    border-radius: 3px;
-    border: 1px slategray solid; 
-    background-color: snow;
+  border-radius: 3px;
+  border: 1px slategrey solid;
+  background-color: snow;
 }
 
 input[type=text]:focus {
-    border-radius: 3px;
-    border: 1px lightslategray solid; 
-    background-color: lightgray;
+  border-radius: 3px;
+  border: 1px lightslategrey solid;
+  background-color: lightgrey;
 }
 
 textarea {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 3px;
-    border: 1px slategray solid; 
-    background-color: snow;
+  border-radius: 3px;
+  border: 1px slategrey solid;
+  background-color: snow;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 textarea:focus {
-    border-radius: 3px;
-    border: 1px lightslategray solid; 
-    background-color: lightgray;
+  border-radius: 3px;
+  border: 1px lightslategrey solid;
+  background-color: lightgrey;
 }
+
+/*# sourceMappingURL=stylesheet.css.map */

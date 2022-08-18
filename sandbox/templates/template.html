@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title> reddet </title>
+        <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" href="{% static 'sandbox/css/stylesheet.css' %}">
         <script src="{% static 'sandbox/script/head.js' %}"></script>
     </head>
@@ -12,6 +12,7 @@
         <div id="header">
             <span id="banner"> reddet </span>
         </div>
+        
         
         <div id="contain">
             {% block board  %}

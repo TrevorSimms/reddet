@@ -9,3 +9,4 @@ reset_database.sql
 .env
 */.env
 */*/.env
+static/sandbox/css/stylesheet.css.map

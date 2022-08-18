@@ -1,5 +1,7 @@
 {% extends 'template.html' %}
 
+{% block title %} reddet {% endblock %}
+
 {% block board %}
 <form id="textroom" action="add/" method="post">
     {% csrf_token %}
