@@ -3,6 +3,7 @@ $containColor: #c8c8c8
 $contentColor: #a1a1a1
 $myFont: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 $contentVertPadding: 3%
+$footColumnWidth: 50%
 
 =horizMargin
     margin-left: 10%
@@ -44,17 +45,11 @@ body
     color: snow
     font-size: 3em
 
-=containStyle($heightVal)
+#contain
     padding-top: 2%
     padding-bottom: 3%
-    height: $heightVal
+    min-height: 70%
     background-color: $containColor
-
-#contain[class=empty]
-    +containStyle(70%)
-    
-#contain[class=exists]
-    +containStyle(auto)
 
 .content 
     margin: $contentVertPadding
@@ -92,21 +87,22 @@ body
     padding: 0.25em
 
 #footer 
-    margin-top: 2%
-    margin-bottom: 2%
     color: snow 
+    padding: 2% 10%
 
-#footerDate 
-    text-align: right
-    margin-right: 10%
-    margin-bottom: 2%
-    float: right
-
-#myContact 
-    text-align: left 
-    margin-left: 10% 
-    margin-bottom: 2%
+.footerspan 
     float: left
+    width: 50%
+
+.faright
+    text-align: right
+
+@media screen and (max-width: 700px)
+    .footerspan
+        width: 100%
+        padding: 2% 0%
+    .faright
+        text-align: left
 
 input[type=button],
 input[type=submit]

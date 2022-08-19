@@ -8,17 +8,21 @@
         <link rel="stylesheet" href="{% static 'sandbox/css/stylesheet.css' %}">
         <script type="text/javascript" src="{% static 'sandbox/script/main.js' %}" defer></script> 
     </head>
-    <body>
+    <body id="boody">
         <div id="header">
             <span id="banner"> reddet </span>
         </div>
 
-        
-        <div id="contain" class="{% if not posts %}empty{%else%}exists{% endif %}">
+        <!-- TODO: Fix layout for the Galaxy Fold,
+                or for widths less than 305px. 
+        -->
+        <div id="contain">
             {% block board  %}
             {% endblock  %}
         </div>
-    <div id="footer"><span id="myContact">trevor-simms@outlook.com</span><span id="footerDate"></span></div>
+    <div id="footer">
+        <span class='footerspan'>trevor-simms@outlook.com</span><span id="footerDate" class='footerspan faright'></span>
+    </div>
     
     </body>
 </html>
