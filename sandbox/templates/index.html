@@ -3,6 +3,16 @@
 {% block title %} reddet {% endblock %}
 
 {% block board %}
+{% for x in posts %}
+<div id="{{ x.id }}" class="content">
+    <div><span class="title">{{ x.title }}</span> 
+        <span class="name">{{x.name}}</span> <span class="postcount">No.{{x.id}}</span></div>
+    <div class="body">
+        {{ x.body }}
+    </div>
+</div>
+{% endfor %}
+
 <form id="textroom" action="add/" method="post">
     {% csrf_token %}
     <table>
@@ -21,14 +31,4 @@
     </tr>
     </table>
 </form>
-
-{% for x in posts %}
-<div id="{{ x.id }}" class="content">
-    <div><span class="title">{{ x.title }}</span> 
-        <span class="name">{{x.name}}</span> <span class="postcount">No.{{x.id}}</span></div>
-    <div class="body">
-        {{ x.body }}
-    </div>
-</div>
-{% endfor %}
 {% endblock %}
